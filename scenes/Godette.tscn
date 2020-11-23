@@ -1,0 +1,81 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://models/godot chan.glb" type="PackedScene" id=1]
+[ext_resource path="res://models/PaletteTexture.material" type="Material" id=2]
+
+[node name="godot chan" instance=ExtResource( 1 )]
+
+[node name="BoneAttachment" parent="Armature/Skeleton" index="0"]
+transform = Transform( 0.99989, -0.000800894, 0.0147893, -0.00124301, 0.990476, 0.137676, -0.0147587, -0.13768, 0.990367, 0.0399729, 2.41135, 0.16789 )
+
+[node name="head" parent="Armature/Skeleton/BoneAttachment" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="ear" parent="Armature/Skeleton/BoneAttachment/head" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="earpiece" parent="Armature/Skeleton/BoneAttachment/head/ear" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="eyelashes" parent="Armature/Skeleton/BoneAttachment/head" index="1"]
+material/0 = ExtResource( 2 )
+
+[node name="eyes" parent="Armature/Skeleton/BoneAttachment/head" index="2"]
+material/0 = ExtResource( 2 )
+
+[node name="hair" parent="Armature/Skeleton/BoneAttachment/head" index="3"]
+material/0 = ExtResource( 2 )
+
+[node name="Sphere001" parent="Armature/Skeleton/BoneAttachment/head/hair" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="Sphere002" parent="Armature/Skeleton/BoneAttachment/head/hair" index="1"]
+material/0 = ExtResource( 2 )
+
+[node name="mouth" parent="Armature/Skeleton/BoneAttachment/head" index="4"]
+material/0 = ExtResource( 2 )
+
+[node name="those things" parent="Armature/Skeleton/BoneAttachment/head" index="5"]
+material/0 = ExtResource( 2 )
+
+[node name="BoneAttachment 2" parent="Armature/Skeleton" index="1"]
+transform = Transform( 0.99998, -0.00602829, 0.00188332, 0.00614084, 0.858399, -0.512946, 0.00147554, 0.512947, 0.858419, 0.0411225, 2.24766, 0.0700769 )
+
+[node name="BoneAttachment 3" parent="Armature/Skeleton" index="2"]
+transform = Transform( 0.99998, -0.0062827, -0.000644425, 0.00614098, 0.991079, -0.133133, 0.00147511, 0.133126, 0.991098, 0.0442538, 1.7537, 0.00372621 )
+
+[node name="BoneAttachment 4" parent="Armature/Skeleton" index="3"]
+transform = Transform( 0.999985, 0.00549136, 0.000464306, 0.00534718, -0.987204, 0.159372, 0.00133353, -0.159367, -0.987218, 0.0464548, 1.41775, -0.0896904 )
+
+[node name="BoneAttachment 5" parent="Armature/Skeleton" index="4"]
+transform = Transform( 0.999985, 0.00549136, 0.000464306, 0.00534718, -0.987204, 0.159372, 0.00133353, -0.159367, -0.987218, 0.0464548, 1.41775, -0.0896904 )
+
+[node name="arms" parent="Armature/Skeleton" index="5"]
+material/0 = ExtResource( 2 )
+
+[node name="backpack" parent="Armature/Skeleton" index="6"]
+material/0 = ExtResource( 2 )
+
+[node name="body" parent="Armature/Skeleton" index="7"]
+material/0 = ExtResource( 2 )
+
+[node name="boots" parent="Armature/Skeleton" index="8"]
+material/0 = ExtResource( 2 )
+
+[node name="Cube" parent="Armature/Skeleton" index="9"]
+material/0 = ExtResource( 2 )
+
+[node name="eyebrows" parent="Armature/Skeleton" index="10"]
+material/0 = ExtResource( 2 )
+
+[node name="hands" parent="Armature/Skeleton" index="11"]
+material/0 = ExtResource( 2 )
+
+[node name="legs" parent="Armature/Skeleton" index="12"]
+material/0 = ExtResource( 2 )
+
+[node name="sleves" parent="Armature/Skeleton" index="13"]
+material/0 = ExtResource( 2 )
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "ArmatureAction"
